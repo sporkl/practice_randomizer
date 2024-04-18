@@ -1,0 +1,13 @@
+(executable
+ (name main)
+ (libraries incr_dom)
+ (modes js)
+ (preprocess
+  (pps js_of_ocaml-ppx ppx_jane)))
+
+(install
+ (section lib)
+ (files
+  index.html
+  style.css
+  (glob_files sporkl-css/*)))

@@ -1,0 +1,26 @@
+(lang dune 3.12)
+(using dune_site 0.1)
+
+(name practice_randomizer)
+
+(generate_opam_files true)
+
+(source
+ (github username/reponame))
+
+(authors "Dmitri Volkov")
+
+(maintainers "Dmitri Volkov")
+
+(license LICENSE)
+
+(documentation https://url/to/documentation)
+
+(package
+ (name practice_randomizer)
+ (synopsis "Tool for randomized practice")
+ (description "Timers you, switches you up")
+ (depends ocaml dune)
+ (sites (share sporkl_css)))
+
+; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
